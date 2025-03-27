@@ -9,8 +9,3 @@ The repository includes:
 - ✅ model architecture 
 - ✅ model training and testing
 
-
----
-## 📊 Dataset
-
-- The dataset is sourced from the **Materials Project** database.
