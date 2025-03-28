@@ -34,10 +34,7 @@ def preprocess(filepath):
     drop_cols = ['battery_id', 'battery_formula', 'framework_formula', 'adj_pairs', 'capacity_vol', 
                  'energy_vol', 'formula_charge', 'formula_discharge', 'formula_charge_encoded', 
                  'formula_discharge_encoded', 'id_charge', 'id_discharge', 'working_ion', 'num_steps',
-                 'stability_charge', 'stability_discharge', 'charge_crystal_system', 'charge_energy_per_atom',
-                 'charge_formation_energy_per_atom', 'charge_band_gap', 'charge_efermi',
-                 'discharge_crystal_system', 'discharge_energy_per_atom', 'discharge_formation_energy_per_atom',
-                 'discharge_band_gap', 'discharge_efermi']
+                 'stability_charge', 'stability_discharge', 'charge_crystal_system', 'discharge_crystal_system', ]
     df.drop(columns=drop_cols, inplace=True, errors='ignore')
 
     x_df = df.drop(columns=['average_voltage'])
