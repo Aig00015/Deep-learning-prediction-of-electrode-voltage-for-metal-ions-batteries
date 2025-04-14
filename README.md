@@ -9,3 +9,4 @@ The repository includes:
 - ✅ model architecture 
 - ✅ model training and testing
 
+Running maincode.ipynb will reproduce the full workflow, from data loading and preprocessing to model training and evaluation. Simply update the file paths as needed.
