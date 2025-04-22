@@ -39,11 +39,10 @@ def preprocess(filepath):
 
     x_df = df.drop(columns=['average_voltage'])
     y_df = df[['average_voltage']]
+    
 
-    split = int(len(df) * 0.9)
-    x_train, x_test = x_df.iloc[:split], x_df.iloc[split:]
-    y_train, y_test = y_df.iloc[:split], y_df.iloc[split:]
-
+    x_train, x_test, y_train, y_test = train_test_split(x_df,y_df,train_size=0.9003)
+    
     pca = PCA(0.99)
     x_train_pca = pca.fit_transform(x_train)
     x_test_pca = pca.transform(x_test)
